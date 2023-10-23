@@ -1,0 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html{
+  min-height: 100%;
+  background-image: url("pixel-jeff-chill-mario-2023-2.gif");
+  background-size: cover;
+}
+
+body{
+  margin: 0;
+}

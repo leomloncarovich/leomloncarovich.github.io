@@ -1,0 +1,41 @@
+button{
+  text-decoration: none;
+  color: #85E21F;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: black;
+  padding: 5px;
+  border-radius: 15px;
+  font-family: 'Common pixel';
+}
+
+nav{
+  background-color: #F75F1C;
+  padding: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: #85E21F;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: black;
+  padding: 5px;
+  border-radius: 15px;
+  font-family: 'Common pixel';
+}
+
+header{
+  text-align: center;
+  padding: 100px 100px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  header .meunome {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+}

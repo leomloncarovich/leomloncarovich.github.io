@@ -1,0 +1,17 @@
+.btn-inicio {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  background-color: black;
+  color: #85E21F;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-family: 'Common Pixel';
+}
+
+.btn-inicio:hover {
+  background-color: #555;
+}
