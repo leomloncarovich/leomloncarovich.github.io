@@ -112,6 +112,7 @@ h2{
   .navegationlist {
     flex-direction: column;
     align-items: center;
+    gap: 5px;
   }
 
   .navegationlist li {
