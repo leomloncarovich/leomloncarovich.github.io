@@ -4,7 +4,11 @@ import Particles from './components/Particles'
 function App() {
 
   return (
+    <>
     <Particles />
+      <div>
+      </div>
+    </>
   )
 }
 
