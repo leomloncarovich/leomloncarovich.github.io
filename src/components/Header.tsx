@@ -1,7 +1,7 @@
-import { FaLinkedin } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa"
-import { FaInstagram } from "react-icons/fa"
-import assinatura from "../assets/assinatura.png"
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import assinatura from "../assets/assinatura.png";
 
 function Header() {
   return (

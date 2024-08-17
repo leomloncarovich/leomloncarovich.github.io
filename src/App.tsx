@@ -1,6 +1,6 @@
-import './App.css'
-import Particles from './components/Particles'
-import Header from './components/Header'
+import './App.css';
+import Particles from './components/Particles';
+import Header from './components/Header';
 
 function App() {
 
@@ -15,4 +15,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
