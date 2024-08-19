@@ -1,0 +1,4 @@
+export const HERO_CONTENT = `Olá! Meu nome é Léo, sou um desenvolvedor full-stack apaixonado por tecnologia e programação. Desde que comecei minha jornada no mundo do desenvolvimento, venho me dedicando a aprender e aplicar as melhores práticas em desenvolvimento de software, tanto no frontend quanto no backend. Com uma forte base em Python, JavaScript e TypeScript, estou sempre buscando novas maneiras de melhorar minhas habilidades e entregar soluções eficientes e inovadoras.`
+
+
+export const ABOUT_ME = `Minha jornada começou com o desejo de entender como as coisas funcionam por trás das telas, tanto no frontend quanto no backend. Isso me levou a explorar o desenvolvimento web de forma abrangente, onde descobri uma paixão por criar aplicações dinâmicas e bem estruturadas em ambos os lados. Desde então, tenho me especializado em frameworks como Django e Flask para o backend, e React para o frontend, além de explorar o ecossistema JavaScript com Node.js e Next.js.`

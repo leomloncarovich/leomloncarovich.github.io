@@ -8,7 +8,9 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
-        'poppins-bold': ['Poppins', 'sans-serif']
+        'poppins-bold': ['Poppins', 'sans-serif'],
+        'poppins-thin': ['Poppins', 'sans-serif'],
+        'poppins-light': ['Poppins', 'sans-serif']
       }
     },
   },
