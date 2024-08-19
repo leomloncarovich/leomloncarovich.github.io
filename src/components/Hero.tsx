@@ -1,4 +1,5 @@
 import { HERO_CONTENT } from "../constants";
+import fotoperfil from '../assets/PERFILPORT.jpeg'
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
         <div className="flex flex-col items-center lg:items-start">
           <h1 className="font-poppins pb-16 text-5xl tracking-tight 
           lg:mt-16 lg:text-8xl select-none pointer-events-none">
-            Leo M Loncarovich
+            Léo M. Loncarovich
           </h1>
           <span className="bg-gradient-to-r from-rose-200 via-purple-300 
           to-violet-500 bg-clip-text text-4xl tracking-tight 
@@ -20,6 +21,12 @@ const Hero = () => {
             {HERO_CONTENT}
           </p>
         </div>
+      </div>
+        <div className="w-full lg:w-1/2 lg:p-8 flex justify-center">
+          <img src={fotoperfil}  
+          className="w-full h-auto max-w-xs lg:max-w-md rounded-md
+          select-none pointer-events-none"
+          alt="Foto De Perfil" />
       </div>
     </div>
   </div>
