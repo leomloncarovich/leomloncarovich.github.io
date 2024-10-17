@@ -6,7 +6,7 @@ const CalculatorPage = () => {
     const existingIframe = container?.querySelector('iframe');
     if (!existingIframe) {
       const iframe = document.createElement('iframe');
-      iframe.src = "src/assets/projects/calculator/index.html";
+      iframe.src = "./projects/calculator/index.html";
       iframe.style.width = "100%";
       iframe.style.height = "100vh";
       container?.appendChild(iframe);
