@@ -3,7 +3,6 @@
   import { FaGithub } from "react-icons/fa";
   import { FaInstagram } from "react-icons/fa";
   import assinatura from "../assets/assinatura.png";
-import { FaHouseChimney, FaHouseChimneyCrack, FaHouseChimneyUser, FaHouseChimneyWindow, FaHouseLaptop } from "react-icons/fa6";
 
   function Header() {
     return (
