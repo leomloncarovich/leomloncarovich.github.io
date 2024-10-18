@@ -6,6 +6,7 @@ const projects = [
     title: "Calculadora",
     description: "Uma calculadora simples feita com React e JavaScript.",
     link: "/calculator",
+    githublink: "https://github.com/leomloncarovich/Calculator"
   },
 ]
 
@@ -18,11 +19,22 @@ const Projects = () => {
           <div key={project.id} className="p-4 border rounded-lg shadow-lg">
             <h3 className="text-xl font-bold">{project.title}</h3>
             <p className="text-neutral-500">{project.description}</p>
-            <Link to={project.link} rel="noopener noreferrer">
-              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">
-                Ver Projeto
-              </button>
-            </Link>
+            <div className="flex gap-4">
+              <div>
+                <Link to={project.link} rel="noopener noreferrer">
+                  <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">
+                    Ver Projeto
+                  </button>
+                </Link>
+              </div>
+              <div>
+              <Link to={project.githublink} target="_blank" rel="noopener noreferrer">
+                <button className=" mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">
+                  Ver Repositorio
+                </button>
+              </Link>
+              </div>
+            </div>
           </div>
         ))}
       </div>
