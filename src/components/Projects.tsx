@@ -18,7 +18,7 @@ const Projects = () => {
           <div key={project.id} className="p-4 border rounded-lg shadow-lg">
             <h3 className="text-xl font-bold">{project.title}</h3>
             <p className="text-neutral-500">{project.description}</p>
-            <Link to={project.link} target={project.link.startsWith("http") ? "_blank" : ""} rel="noopener noreferrer">
+            <Link to={project.link} rel="noopener noreferrer">
               <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">
                 Ver Projeto
               </button>

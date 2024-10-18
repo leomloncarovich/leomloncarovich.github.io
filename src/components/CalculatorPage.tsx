@@ -1,20 +1,19 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-const CalculatorPage = () => {
+const CalculatorPage: React.FC = () => {
   useEffect(() => {
-    const container = document.getElementById('calculator-container');
-    const existingIframe = container?.querySelector('iframe');
-    if (!existingIframe) {
-      const iframe = document.createElement('iframe');
-      iframe.src = "./projects/calculator/index.html";
-      iframe.style.width = "100%";
-      iframe.style.height = "100vh";
-      container?.appendChild(iframe);
-    }
+    const container = document.querySelector('.calculatora-container');
+    if (!container) return;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = 'src/projects/calculadora/index.html'; // Ajuste o caminho
+    iframe.style.width = "100%";
+    iframe.style.height = "100vh";
+    container.appendChild(iframe);
   }, []);
 
   return (
-    <div id="calculator-container">
+    <div className='calculatora-container w-full h-full flex justify-center items-center'>
     </div>
   );
 };
