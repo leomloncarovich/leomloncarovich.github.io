@@ -6,7 +6,7 @@ const CalculatorPage: React.FC = () => {
     if (!container) return;
 
     const iframe = document.createElement('iframe');
-    iframe.src = 'src/projects/calculadora/index.html'; // Ajuste o caminho
+    iframe.src = '/calculadora/index.html'; // Ajuste o caminho
     iframe.style.width = "100%";
     iframe.style.height = "100vh";
     container.appendChild(iframe);
