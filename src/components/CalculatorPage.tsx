@@ -64,8 +64,8 @@ const Calculator: React.FC = () => {
   return (
     <main className='flex justify-center items-center m-2'>
       <div className="w-full max-w-sm bg-gray-800 p-6 shadow-lg">
-        <div className={`w-full min-h-14 border mb-4 text-right py-3 pr-2 text-lg font-mono text-white ${isOn ? 'bg-gray-700' : 'bg-gray-600'}}`}>{isOn ? completeOperation : ''}</div>
-        <div className={`w-full h-14 border mb-4 text-right py-3 pr-2 text-2xl font-mono text-white ${isOn ? 'bg-gray-700' : 'bg-gray-600'}`}>{isOn ? currentValue : 'OFF'}</div>
+        <div className={`w-full min-h-14 border mb-4 flex justify-end text-right overflow-hidden whitespace-nowrap py-3 pr-2 text-lg font-mono text-white ${isOn ? 'bg-gray-700' : 'bg-gray-600'}}`} style={{ direction: 'ltr' }}>{isOn ? completeOperation : ''}</div>
+        <div className={`w-full h-14 border mb-4 flex justify-end text-right overflow-hidden whitespace-nowrap py-3 pr-2 text-2xl font-mono text-white ${isOn ? 'bg-gray-700' : 'bg-gray-600'}`} style={{ direction: 'ltr' }}>{isOn ? currentValue : 'OFF'}</div>
         <div className="grid grid-cols-4 gap-4">
           <button className={`py-2 col-span-2 font-bold rounded ${isOn ? 'bg-green-600' : 'bg-red-500'}`} onClick={togglePower}>On/Off</button>
           <button className='bg-red-500 text-white font-bold py-2 rounded' onClick={handleClear} disabled={!isOn}>AC</button>
