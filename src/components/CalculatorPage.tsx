@@ -20,6 +20,7 @@ const Calculator: React.FC = () => {
 
       if (lastNumber.includes('.')) return;
     }
+
     if (currentValue === '0' && !operations.includes(value)) {
       setCurrentValue(value);
     } else {
