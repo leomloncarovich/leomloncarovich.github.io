@@ -14,21 +14,25 @@ const Calculator: React.FC = () => {
 
   const handleClick = (value: string) => {
     if (!isOn) return;
+
+    if (value === '.') {
+      const lastNumber = completeOperation.trim().split(/[\+\-\×\÷]/).pop() || '';
+
+      if (lastNumber.includes('.')) return;
+    }
+    if (currentValue === '0' && !operations.includes(value)) {
+      setCurrentValue(value);
+    } else {
+      setCurrentValue((prevValue) => prevValue + value);
+    }
+
     const lastChar = completeOperation.trim().slice(-1);
+
     if (operations.includes(lastChar) && operations.includes(value)) {
       setCompleteOperation((prevOperation) => prevOperation.slice(0, -1) + value);
     } else {
       setCompleteOperation((prevOperation) => prevOperation + value);
     }
-    setCurrentValue((prevValue) => {
-      if (prevValue === '0' && value !== '.') {
-        return value;
-      } else if (value === '.' && prevValue.includes('.')) {
-        return prevValue;
-      } else {
-        return prevValue + value;
-      }
-    });
   };
 
   const handleClear = () => {
@@ -56,8 +60,8 @@ const Calculator: React.FC = () => {
       setCompleteOperation(`${expression} = ${result}`);
       setCompleteOperation(result.toString());
     } catch (error) {
-      setCurrentValue("Error");
-      setCompleteOperation("Error");
+      setCurrentValue("Erro");
+      setCompleteOperation("Erro");
     }
   };
 
