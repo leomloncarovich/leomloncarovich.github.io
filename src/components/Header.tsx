@@ -1,7 +1,6 @@
   import { Link } from "react-router-dom";
   import { FaHome, FaLinkedin } from "react-icons/fa";
   import { FaGithub } from "react-icons/fa";
-  import { FaInstagram } from "react-icons/fa";
   import assinatura from "../assets/assinatura.png";
 
   function Header() {
@@ -15,9 +14,12 @@
                 <Link to="/">
                   <FaHome/>
                 </Link>
-                <FaLinkedin />
-                <FaGithub />
-                <FaInstagram />
+                <a href="https://www.linkedin.com/in/leomloncarovich/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin />
+                </a>
+                <a href="https://github.com/leomloncarovich" target="_blank" rel="noopener noreferrer">
+                  <FaGithub />
+                </a>
             </div>
           </nav>
       </header>
