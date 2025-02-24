@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import fotoperfil from '../assets/PERFILPORT.jpeg'
+import fotoperfil from '../assets/FotoPerfilPortfolio.jpg'
 
 const Hero = () => {
   return (
