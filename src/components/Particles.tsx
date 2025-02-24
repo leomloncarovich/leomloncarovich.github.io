@@ -6,9 +6,9 @@ import {
   MoveDirection,
   OutMode,
 } from "@tsparticles/engine";
- import { loadFull } from "tsparticles";
+import { loadFull } from "tsparticles";
 
-const particlesApp = () => {
+const ParticlesStars = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -25,61 +25,50 @@ const particlesApp = () => {
 
   const options: ISourceOptions = useMemo(
     () => ({
-      fpsLimit: 120,
-      interactivity: {
-        events: {
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-        },
-        modes: {
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
-        },
+      background: {
+        color: "#000000",
       },
+      fpsLimit: 60,
       particles: {
-        color: {
-          value: "#ffffff",
-        },
-        links: {
-          color: "#ffffff",
-          distance: 150,
-          enable: true,
-          opacity: 0.5,
-          width: 1,
-        },
-        move: {
-          direction: MoveDirection.none,
-          enable: true,
-          outModes: {
-            default: OutMode.out,
-          },
-          random: false,
-          speed: 6,
-          straight: false,
-        },
         number: {
+          value: 200,
           density: {
             enable: true,
+            area: 800,
           },
-          value: 80,
         },
-        opacity: {
-          value: 0.5,
+        color: {
+          value: "#ffffff",
         },
         shape: {
           type: "circle",
         },
+        opacity: {
+          value: { min: 0.3, max: 1 },
+          random: true,
+          animation: {
+            enable: true,
+            speed: 1,
+            minimumValue: 0.3,
+            sync: false,
+          },
+        },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1, max: 3 },
+          random: true,
+        },
+        move: {
+          enable: true,
+          speed: 0.2,
+          direction: MoveDirection.none,
+          outModes: {
+            default: OutMode.out,
+          },
         },
       },
       detectRetina: true,
     }),
-    [],
+    []
   );
 
   if (init) {
@@ -95,4 +84,4 @@ const particlesApp = () => {
   return <></>;
 };
 
-export default particlesApp;
+export default ParticlesStars;
