@@ -1,4 +1,4 @@
-import AboutPic from '../assets/ImagemAbout.jpeg'
+import AboutPic from '/assets/ImagemAbout.jpeg'
 import { ABOUT_ME } from '../constants';
 import { motion } from 'framer-motion';
 

@@ -1,7 +1,7 @@
   import { Link } from "react-router-dom";
   import { FaHome, FaLinkedin } from "react-icons/fa";
   import { FaGithub } from "react-icons/fa";
-  import assinatura from "../assets/assinatura.png";
+  import assinatura from "/assets/assinatura.png";
 
   function Header() {
     return (

@@ -8,7 +8,7 @@ const projects = [
     description: "Uma calculadora simples feita com React e JavaScript.",
     link: "/calculator",
     githublink: "https://github.com/leomloncarovich/Calculator",
-    imagem: "src/assets/PictureProject1.png",
+    imagem: "/assets/PictureProject1.png",
     technologies: ["React", "Typescript", "Javascript"]
   },
 ]

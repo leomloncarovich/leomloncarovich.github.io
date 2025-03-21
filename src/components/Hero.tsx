@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import fotoperfil from '../assets/FotoPerfilPortfolio.jpg'
+import fotoperfil from '/assets/FotoPerfilPortfolio.jpg'
 import { motion } from "framer-motion"; 
 import { motionHero } from "./Animations";
 
